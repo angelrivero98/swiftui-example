@@ -36,19 +36,9 @@ class GnomesListViewModel: ObservableObject {
         })
     }
 
-    func generateNDimensionArray(columns: Int) -> [GnomeColumn] {
-        var gnomesColumns = [GnomeColumn]()
-        let _ = gnomes.clump(by: columns).map({ values in
-            gnomesColumns.append(GnomeColumn(gnomes: values))
-        })
-        return gnomesColumns
-    }
-
-    func widthForItem() -> CGFloat {
-        return screenSize.width - 40
-    }
-
-    func heightForItem() -> CGFloat {
-        return 200
+    func searchGnomes(text: String) -> [Gnome] {
+        return gnomes.filter {
+            text.isEmpty ? true : $0.name.lowercased().contains(text.lowercased())
+        }
     }
 }

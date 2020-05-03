@@ -10,8 +10,6 @@
 		ACD38EB144D5E488C204EFEC /* Pods_SwiftUIExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68891AB668958ED93EF20E22 /* Pods_SwiftUIExample.framework */; };
 		D225231C209140E42A7FA10B /* Pods_SwiftUIExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B5A24C84A3D19F1C948962 /* Pods_SwiftUIExampleTests.framework */; };
 		E721E0F8245BFEAD0086ECF3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721E0F7245BFEAD0086ECF3 /* CircleImage.swift */; };
-		E721E0FA245C00FE0086ECF3 /* GnomeColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721E0F9245C00FE0086ECF3 /* GnomeColumn.swift */; };
-		E721E0FD245C03D70086ECF3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721E0FC245C03D70086ECF3 /* Extensions.swift */; };
 		E721E0FF245C99DA0086ECF3 /* GnomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721E0FE245C99DA0086ECF3 /* GnomeDetailView.swift */; };
 		E721E107245CED330086ECF3 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721E104245CED320086ECF3 /* ColorExtension.swift */; };
 		E721E108245CED330086ECF3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721E105245CED320086ECF3 /* UIColorExtension.swift */; };
@@ -34,6 +32,7 @@
 		E7511BF5245A8ED40064BEC3 /* GnomesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7511BF4245A8ED40064BEC3 /* GnomesListView.swift */; };
 		E7511BF7245A8F470064BEC3 /* GnomesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7511BF6245A8F470064BEC3 /* GnomesListViewModel.swift */; };
 		E7511BFB245A93BE0064BEC3 /* GnomesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7511BFA245A93BE0064BEC3 /* GnomesResult.swift */; };
+		E75772EA245F777E0058CBD1 /* SearchBarRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75772E9245F777E0058CBD1 /* SearchBarRepresentable.swift */; };
 		E8ADD18BE0D6578713D7E1BA /* Pods_SwiftUIExample_SwiftUIExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B461DD8ABA15CDCE3EC0587F /* Pods_SwiftUIExample_SwiftUIExampleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +64,6 @@
 		D2B5A24C84A3D19F1C948962 /* Pods_SwiftUIExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48483D61F2653166A650BCD /* Pods-SwiftUIExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIExample.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIExample/Pods-SwiftUIExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E721E0F7245BFEAD0086ECF3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		E721E0F9245C00FE0086ECF3 /* GnomeColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeColumn.swift; sourceTree = "<group>"; };
-		E721E0FC245C03D70086ECF3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E721E0FE245C99DA0086ECF3 /* GnomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailView.swift; sourceTree = "<group>"; };
 		E721E104245CED320086ECF3 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorExtension.swift; path = ../../../../../Downloads/SmartLair/final/SmartLair/Extensions/ColorExtension.swift; sourceTree = "<group>"; };
 		E721E105245CED320086ECF3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = ../../../../../Downloads/SmartLair/final/SmartLair/Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
@@ -95,6 +92,7 @@
 		E7511BF4245A8ED40064BEC3 /* GnomesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesListView.swift; sourceTree = "<group>"; };
 		E7511BF6245A8F470064BEC3 /* GnomesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesListViewModel.swift; sourceTree = "<group>"; };
 		E7511BFA245A93BE0064BEC3 /* GnomesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesResult.swift; sourceTree = "<group>"; };
+		E75772E9245F777E0058CBD1 /* SearchBarRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +152,6 @@
 				E721E104245CED320086ECF3 /* ColorExtension.swift */,
 				E721E106245CED330086ECF3 /* LinearGradientExtension.swift */,
 				E721E105245CED320086ECF3 /* UIColorExtension.swift */,
-				E721E0FC245C03D70086ECF3 /* Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -244,6 +241,7 @@
 				E721E10E245D45CD0086ECF3 /* TextOverlayView.swift */,
 				E721E110245D4C8E0086ECF3 /* GnomeRow.swift */,
 				E74B0C45245F372800D21E08 /* CardView.swift */,
+				E75772E9245F777E0058CBD1 /* SearchBarRepresentable.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,7 +260,6 @@
 			children = (
 				E7511BF2245A8D5D0064BEC3 /* Gnome.swift */,
 				E7511BFA245A93BE0064BEC3 /* GnomesResult.swift */,
-				E721E0F9245C00FE0086ECF3 /* GnomeColumn.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -509,7 +506,6 @@
 				E7511BF5245A8ED40064BEC3 /* GnomesListView.swift in Sources */,
 				E721E108245CED330086ECF3 /* UIColorExtension.swift in Sources */,
 				E7511BBC245A88540064BEC3 /* AppDelegate.swift in Sources */,
-				E721E0FA245C00FE0086ECF3 /* GnomeColumn.swift in Sources */,
 				E7511BBE245A88540064BEC3 /* SceneDelegate.swift in Sources */,
 				E7511BEF245A89290064BEC3 /* ApiService.swift in Sources */,
 				E7511BFB245A93BE0064BEC3 /* GnomesResult.swift in Sources */,
@@ -522,7 +518,7 @@
 				E721E10F245D45CD0086ECF3 /* TextOverlayView.swift in Sources */,
 				E74B0C46245F372800D21E08 /* CardView.swift in Sources */,
 				E721E0FF245C99DA0086ECF3 /* GnomeDetailView.swift in Sources */,
-				E721E0FD245C03D70086ECF3 /* Extensions.swift in Sources */,
+				E75772EA245F777E0058CBD1 /* SearchBarRepresentable.swift in Sources */,
 				E7511BF7245A8F470064BEC3 /* GnomesListViewModel.swift in Sources */,
 				E721E113245DFDCF0086ECF3 /* GnomeDetailViewModel.swift in Sources */,
 				E721E107245CED330086ECF3 /* ColorExtension.swift in Sources */,

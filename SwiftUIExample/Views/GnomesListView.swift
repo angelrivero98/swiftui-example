@@ -14,25 +14,28 @@ struct GnomesListView: View {
     @ObservedObject var viewModel = GnomesListViewModel()
     @State private var selectedGnome: Gnome = Gnome()
     @State private var showModal = false
-
+    @State private var searchText: String = ""
+    
     init() {
         UITableView.appearance().separatorStyle = .none
-        UINavigationBar.appearance().largeTitleTextAttributes =
-        [.foregroundColor: UIColor.lairDarkGray]
     }
 
     var body: some View {
         NavigationView {
-            List (viewModel.gnomes) { gnome in
-                GnomeRow(image: gnome.thumbnail, name: gnome.name, age: gnome.age)
+            VStack {
+                SearchBar(text: $searchText, placeholder: "Search Gnomes")
+                List (viewModel.searchGnomes(text: self.searchText), id: \.id) { gnome in
+                    GnomeRow(image: gnome.thumbnail, name: gnome.name, age: gnome.age)
                     .onTapGesture {
                         self.showModal.toggle()
                         self.selectedGnome = gnome
                     }
-            }
-            .navigationBarTitle("Gnomes")
-            .sheet(isPresented: $showModal) {
-                GnomeDetailView(viewModel: GnomeDetailViewModel(gnome: self.selectedGnome))
+                }
+                .id(UUID())
+                .navigationBarTitle("Gnomes")
+                .sheet(isPresented: $showModal) {
+                    GnomeDetailView(viewModel: GnomeDetailViewModel(gnome: self.selectedGnome))
+                }
             }
         }
         .colorMultiply(Color.lairBackgroundGray)
